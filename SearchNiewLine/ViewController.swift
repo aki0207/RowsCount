@@ -1,18 +1,16 @@
-//
-//  ViewController.swift
-//  SearchNiewLine
-//
-//  Created by 永見彰宏 on 2019/03/24.
-//  Copyright © 2019 永見彰宏. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var textView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        var rows = (textView.contentSize.height - textView.textContainerInset.top - textView.textContainerInset.bottom) / textView.font!.lineHeight
+        print(rows)
+        
     }
 
 
